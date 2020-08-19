@@ -20,4 +20,9 @@
     box-shadow: 5px 10px #888888;
     margin-left: 0px;
   }
+  .done {
+    margin-left: 0px;
+    font-size: 20px;
+    padding: 20px;
+  }
 }
