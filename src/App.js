@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import keys from "./Keys";
-
+import "./App.css";
 const api = {
   key: keys.API_KEY,
   base: keys.BASE_URL,
@@ -41,7 +41,7 @@ function App() {
         <div className="search-container">
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="Enter Place Name"
             className="search-bar"
             onChange={(e) => setQuery(e.target.value)}
             value={query}
@@ -49,7 +49,7 @@ function App() {
           />
         </div>
         {typeof weather.main != "undefined" ? (
-          <div>
+          <div className="done">
             <div className="location-container">
               <div className="location">
                 {weather.name}, {weather.sys.country}
